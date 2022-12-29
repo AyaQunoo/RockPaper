@@ -4,9 +4,9 @@ let computerScore = 0;
 let computer;
 let button = document.querySelector("button");
 let result = document.getElementById("result");
-const tied = new Audio("/soundsEffect/tied.mp3");
-const winner = new Audio("/soundsEffect/K2TG46Z-winner-trumpet.mp3");
-const loser = new Audio("/soundsEffect/89QFHTG-game-over-loser-05.mp3");
+const tied = new Audio("soundsEffect/tied.mp3");
+const winner = new Audio("soundsEffect/K2TG46Z-winner-trumpet.mp3");
+const loser = new Audio("soundsEffect/89QFHTG-game-over-loser-05.mp3");
 
 let choices = ["rock", "paper", "scissor"];
 
@@ -15,9 +15,9 @@ buttons.forEach((button) => {
   button.addEventListener("click", () => {
     you = button.id;
     computer = computerChoice();
-    document.getElementById("your-choice").src = "/img/" + you + ".png";
+    document.getElementById("your-choice").src = "img/" + you + ".png";
     document.getElementById("computer-choice").src =
-      "/img/" + computer + ".png";
+      "img/" + computer + ".png";
     decideWinner(you, computer);
   });
 });

@@ -1,0 +1,51 @@
+body {
+  font: Arial, Helvetica, sans-serif;
+  background-image: url(vs.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section {
+  margin: 0 auto;
+  text-align: center;
+}
+.ui {
+  justify-content: center;
+  display: flex;
+  gap: 15rem;
+}
+.ui img {
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+}
+
+.score {
+  display: flex;
+  justify-content: space-around;
+}
+
+#choice {
+  width: 350px;
+  margin: 0 auto;
+}
+#choice h3 {
+  background-color: white;
+}
+#choice img {
+  width: 80px;
+  height: 80px;
+  margin-left: 30px;
+}
+#computer-choice {
+  transform: rotate(180deg);
+}
+p {
+  font-size: 30px;
+}
+button {
+  border: none;
+  padding: 20px;
+  border-radius: 30px;
+  margin: 0 auto;
+  font-size: 30px;
+}
